@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva de Salas de Estudio</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <header>
+        <h1>Reserva de Salas de Estudio</h1>
+    </header>
+    <main>
+        <section id="user-section">
+            <h2>Crear un nuevo usuario</h2>
+            <form id="user-form">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                <br>
+                <label for="lastname">Apellido:</label>
+                <input type="text" id="lastname" name="lastname" required>
+                <br>
+                <label for="identification">Cédula:</label>
+                <input type="text" id="identification" name="identification" required>
+                <br>
+                <button type="submit">Crear Usuario</button>
+            </form>
+        </section>
+
+        <section id="room-section">
+            <h2>Crear una nueva sala</h2>
+            <form id="room-form">
+                <label for="room-name">Nombre de la Sala:</label>
+                <input type="text" id="room-name" name="room-name" required>
+                <br>
+                <label for="room-location">Ubicación:</label>
+                <input type="text" id="room-location" name="room-location" required>
+                <br>
+                <button type="submit">Crear Sala</button>
+            </form>
+        </section>
+
+        <section id="reservation-section">
+            <h2>Hacer una reserva</h2>
+            <form id="reservation-form">
+                <label for="user-name">Nombre del Usuario:</label>
+                <input type="text" id="user-name" name="user-name" required>
+                <br>
+                <label for="user-lastname">Apellido del Usuario:</label>
+                <input type="text" id="user-lastname" name="user-lastname" required>
+                <br>
+                <label for="user-identification">Cédula del Usuario:</label>
+                <input type="text" id="user-identification" name="user-identification" required>
+                <br>
+                <label for="room-select">Selecciona una Sala:</label>
+                <select id="room-select" name="room-select" required>
+                    <option value="sala1">Sala 1</option>
+                    <option value="sala2">Sala 2</option>
+                    <option value="sala3">Sala 3</option>
+                    <option value="sala4">Sala 4</option>
+                    <option value="sala5">Sala 5</option>
+                </select>
+                <br>
+                <label for="reservation-hour">Hora de la Reserva:</label>
+                <input type="number" id="reservation-hour" name="reservation-hour" min="7" max="18" required>
+                <br>
+                <button type="submit">Hacer Reserva</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Reserva de Salas Katherine Reyes</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
